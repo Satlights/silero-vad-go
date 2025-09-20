@@ -1,5 +1,8 @@
 package speech
 
+// #cgo CFLAGS: -I/usr/local/onnxruntime/include
+// #cgo LDFLAGS: -L/usr/local/onnxruntime/lib -Wl,-rpath,/usr/local/onnxruntime/lib
+//
 // #cgo CFLAGS: -Wall -Werror -std=c99
 // #cgo LDFLAGS: -lonnxruntime
 // #include "ort_bridge.h"
